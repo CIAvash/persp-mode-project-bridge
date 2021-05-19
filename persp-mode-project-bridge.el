@@ -5,6 +5,7 @@
 ;;
 ;; Author: Constantin Kulikov (Bad_ptr) <zxnotdead@gmail.com>
 ;;      Siavash Askari Nasr <siavash.askari.nasr@gmail.com>
+;; Maintainer: Siavash Askari Nasr <siavash.askari.nasr@gmail.com>
 ;; Version: 0.1
 ;; Package-Requires: ((emacs "27.1") (persp-mode "2.9"))
 ;; License: GPL either version 3 or any later version
