@@ -61,6 +61,7 @@
 (require 'project)
 (require 'cl-lib)
 
+(declare-function project-root "project")
 
 (defvar persp-mode-project-bridge-mode nil)
 
@@ -117,7 +118,9 @@
                       (concat persp-mode-project-bridge-persp-name-prefix
                               (file-name-nondirectory
                                (directory-file-name
-                                (project-root (project-current))))))))
+                                (if (fboundp 'project-root)
+                                    (project-root (project-current))
+                                  (car (project-roots (project-current))))))))))
           (when persp
             (persp-add-buffer b persp nil nil)
             persp))))))
