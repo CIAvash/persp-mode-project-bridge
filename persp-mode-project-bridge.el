@@ -8,7 +8,7 @@
 ;; Maintainer: Siavash Askari Nasr <siavash.askari.nasr@gmail.com>
 ;; Version: 0.1
 ;; Package-Requires: ((emacs "27.1") (persp-mode "2.9"))
-;; License: GPL either version 3 or any later version
+;; SPDX-License-Identifier: GPL-3.0-or-later
 ;; Keywords: vc, persp-mode, perspective, project, project.el
 ;; URL: https://github.com/CIAvash/persp-mode-project-bridge
 
