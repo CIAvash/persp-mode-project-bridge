@@ -22,3 +22,15 @@ persp-mode project.el integration
                 t))
 
 ```
+
+With `use-package`:
+
+```elisp
+(use-package persp-mode-project-bridge
+  :hook
+  (persp-mode-project-bridge-mode . (lambda ()
+                                      (if persp-mode-project-bridge-mode
+                                          (persp-mode-project-bridge-find-perspectives-for-all-buffers)
+                                        (persp-mode-project-bridge-kill-perspectives))))
+  (persp-mode . persp-mode-project-bridge-mode))
+```

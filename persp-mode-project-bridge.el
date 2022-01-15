@@ -52,7 +52,15 @@
 ;;             (lambda ()
 ;;                 (persp-mode-project-bridge-mode 1))
 ;;             t))
-
+;; 
+;; With use-package:
+;; (use-package persp-mode-project-bridge
+;;   :hook
+;;   (persp-mode-project-bridge-mode . (lambda ()
+;;                                       (if persp-mode-project-bridge-mode
+;;                                           (persp-mode-project-bridge-find-perspectives-for-all-buffers)
+;;                                         (persp-mode-project-bridge-kill-perspectives))))
+;;   (persp-mode . persp-mode-project-bridge-mode))
 
 ;;; Code:
 
